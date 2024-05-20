@@ -1,4 +1,29 @@
-baseURL = 'https://example.org/'
+baseURL = 'https://david206.github.io/'
 languageCode = 'en-us'
-title = 'My New Hugo Site'
+title = 'Blog by David Shimon'
 theme = 'nostyleplease'
+
+defaultContentLanguage = 'he'
+defaultContentLanguageInSubdir = true
+[languages]
+  [languages.he]
+    contentDir = 'content/he'
+    disabled = false
+    languageCode = 'he-IL'
+    languageDirection = 'rtl'
+    languageName = 'Hebrew'
+    title = 'הבלוג של דוד'
+    weight = 1
+    [languages.he.params]
+      subtitle = 'TBD'
+  [languages.en]
+    contentDir = 'content/en'
+    disabled = false
+    languageCode = 'en-US'
+    languageDirection = 'ltr'
+    languageName = 'English'
+    title = 'Blog by David Shimon'
+    weight = 2
+    [languages.en.params]
+      subtitle = 'TBD'
+
