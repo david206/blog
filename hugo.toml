@@ -1,5 +1,5 @@
 baseURL = 'https://david206.github.io/'
-languageCode = 'en-us'
+locale = 'en-us'
 title = 'Blog by David Shimon'
 theme = 'nostyleplease'
 
@@ -9,9 +9,9 @@ defaultContentLanguageInSubdir = true
   [languages.he]
     contentDir = 'content/he'
     disabled = false
-    languageCode = 'he-IL'
-    languageDirection = 'rtl'
-    languageName = 'Hebrew'
+    locale = 'he-IL'
+    direction = 'rtl'
+    label = 'Hebrew'
     title = 'הבלוג של דוד'
     weight = 1
     [languages.he.params]
@@ -19,9 +19,9 @@ defaultContentLanguageInSubdir = true
   [languages.en]
     contentDir = 'content/en'
     disabled = false
-    languageCode = 'en-US'
-    languageDirection = 'ltr'
-    languageName = 'English'
+    locale = 'en-US'
+    direction = 'ltr'
+    label = 'English'
     title = 'Blog by David Shimon'
     weight = 2
     [languages.en.params]
