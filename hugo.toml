@@ -27,3 +27,6 @@ defaultContentLanguageInSubdir = true
     [languages.en.params]
       subtitle = 'TBD'
 
+[caches]
+  [caches.images]
+    dir = ':cacheDir/images'
