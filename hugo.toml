@@ -1,4 +1,4 @@
-baseURL = 'https://david206.github.io/'
+baseURL = 'https://david206.github.io/blog/'
 locale = 'en-us'
 title = 'Blog by David Shimon'
 theme = 'nostyleplease'

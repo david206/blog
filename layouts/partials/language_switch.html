@@ -12,6 +12,6 @@
 {{ if $target }}
   {{ $label := cond (eq $target.Language.Lang "he") "עברית" "English" }}
   <nav class="language-switch" aria-label="Language switcher">
-    <a href="{{ $target.RelPermalink }}">{{ $label }}</a>
+    <a href="{{ $target.Permalink }}">{{ $label }}</a>
   </nav>
 {{ end }}

@@ -1,5 +1,6 @@
 {{ with .Params.cover_image }}
+  {{ $src := strings.TrimPrefix "/" . }}
   <figure class="post-cover">
-    <img src="{{ . | relURL }}" alt="{{ $.Title }}">
+    <img src="{{ $src | relURL }}" alt="{{ $.Title }}">
   </figure>
 {{ end }}
