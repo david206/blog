@@ -18,5 +18,10 @@
   {{ $sass := resources.Get "css/main.scss" }}
   {{ $style := $sass | css.Sass $options | resources.Fingerprint "sha512" }}
   <link rel="stylesheet" href="{{ $style.Permalink | relURL }}" integrity="{{ $style.Data.Integrity }}" />
+  {{ $customSass := resources.Get "css/custom.scss" }}
+  {{ if $customSass }}
+    {{ $customStyle := $customSass | css.Sass $options | resources.Fingerprint "sha512" }}
+    <link rel="stylesheet" href="{{ $customStyle.Permalink | relURL }}" integrity="{{ $customStyle.Data.Integrity }}" />
+  {{ end }}
   {{ if .Params.mathjax }} {{ partial "mathjax.html" . }} {{ end }}
 </head>

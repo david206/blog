@@ -1,0 +1,17 @@
+{{ $otherTranslations := where .AllTranslations "Language.Lang" "ne" .Site.Language.Lang }}
+{{ $target := "" }}
+{{ if gt (len $otherTranslations) 0 }}
+  {{ $target = index $otherTranslations 0 }}
+{{ else }}
+  {{ $otherSites := where hugo.Sites "Language.Lang" "ne" .Site.Language.Lang }}
+  {{ if gt (len $otherSites) 0 }}
+    {{ $target = (index $otherSites 0).Home }}
+  {{ end }}
+{{ end }}
+
+{{ if $target }}
+  {{ $label := cond (eq $target.Language.Lang "he") "עברית" "English" }}
+  <nav class="language-switch" aria-label="Language switcher">
+    <a href="{{ $target.RelPermalink }}">{{ $label }}</a>
+  </nav>
+{{ end }}

@@ -1,0 +1,5 @@
+{{ with .Params.cover_image }}
+  <figure class="post-cover">
+    <img src="{{ . | relURL }}" alt="{{ $.Title }}">
+  </figure>
+{{ end }}

@@ -1,0 +1,16 @@
+[[entries]]
+title = "בית"
+url = "/"
+
+[[entries]]
+title = "פוסטים"
+
+  [entries.post_list]
+  limit = 5
+  show_more = true
+  show_more_text = "לכל הפוסטים..."
+  show_more_url = "/posts/"
+
+[[entries]]
+title = "RSS"
+url = "/he/index.xml"

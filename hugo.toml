@@ -15,7 +15,7 @@ defaultContentLanguageInSubdir = true
     title = 'הבלוג של דוד'
     weight = 1
     [languages.he.params]
-      subtitle = 'TBD'
+      subtitle = 'קוד, מלאכה, והשאלות שבינהם'
   [languages.en]
     contentDir = 'content/en'
     disabled = false
@@ -25,7 +25,7 @@ defaultContentLanguageInSubdir = true
     title = 'Blog by David Shimon'
     weight = 2
     [languages.en.params]
-      subtitle = 'TBD'
+      subtitle = 'Code, craft, and the questions in between'
 
 [caches]
   [caches.images]

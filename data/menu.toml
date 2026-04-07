@@ -1,0 +1,16 @@
+[[entries]]
+title = "Home"
+url = "/"
+
+[[entries]]
+title = "Posts"
+
+  [entries.post_list]
+  limit = 5
+  show_more = true
+  show_more_text = "See all posts..."
+  show_more_url = "/posts/"
+
+[[entries]]
+title = "RSS"
+url = "/en/index.xml"

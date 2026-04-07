@@ -1,8 +1,19 @@
-+++
-title = 'The Mystery of the Invisible Tab: A YAML Debugging Tale'
-date = 2025-01-01T00:00:00Z
-draft = false
-+++
+---
+title: "The Mystery of the Invisible Tab: A YAML Debugging Tale"
+draft: false
+devto_id: 3023493
+slug: "the-mystery-of-the-invisible-tab-a-yaml-debugging-tale-3e3l"
+cover_image: "/devto-assets/the-mystery-of-the-invisible-tab-a-yaml-debugging-tale-3e3l/cover-1.png"
+devto_url: "https://dev.to/david_shimon/the-mystery-of-the-invisible-tab-a-yaml-debugging-tale-3e3l"
+devto_published: false
+date: "2025-11-15T17:14:25Z"
+description: "TL;DR   Spent hours debugging why my OpenFGA CLI config file wasn't working. Turned out YAML..."
+tags:
+  - "openfga"
+  - "debugging"
+  - "yaml"
+  - "cli"
+---
 
 ## TL;DR
 Spent hours debugging why my OpenFGA CLI config file wasn't working. Turned out YAML doesn't support tabs. Good error messages matter.
