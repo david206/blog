@@ -84,6 +84,25 @@ jobs:
             --minify \
             --baseURL "${{ steps.pages.outputs.base_url }}/" \
             --cacheDir "${{ runner.temp }}/hugo_cache"
+      - name: Build site for local link checking
+        run: |
+          hugo build \
+            --gc \
+            --minify \
+            --baseURL "/" \
+            --destination "${{ runner.temp }}/lychee_public" \
+            --cacheDir "${{ runner.temp }}/hugo_cache"
+      - name: Check generated links
+        uses: lycheeverse/lychee-action@v2
+        with:
+          args: >-
+            --verbose
+            --no-progress
+            --root-dir "${{ runner.temp }}/lychee_public"
+            "${{ runner.temp }}/lychee_public/**/*.html"
+            "${{ runner.temp }}/lychee_public/**/*.xml"
+          fail: true
+          token: ${{ secrets.GITHUB_TOKEN }}
       - name: Cache save
         id: cache-save
         uses: actions/cache/save@v5
