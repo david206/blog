@@ -65,7 +65,7 @@ But wait - if I added blank lines back to the working file, it continued to work
 
 Closer inspection revealed the truth: those weren't blank lines. One of them contained a **tab character**.
 
-I discovered that YAML doesn't support tabs. In fact, it's [FAQ #2 on yaml.org](https://yaml.org/faq.html) (right after "What's the official file extension?").
+I discovered that YAML doesn't support tabs. In fact, it's [FAQ #2 on old version of yaml.org](https://web.archive.org/web/20260107173151/https://yaml.org/faq.html) (right after "What's the official file extension?").
 
 Mystery solved. The culprit found. And as usual in these stories: it was me.
 

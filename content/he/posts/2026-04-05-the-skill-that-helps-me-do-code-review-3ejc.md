@@ -17,7 +17,7 @@ tags = ["ai", "codereview", "skills"]
 
 ## טיפ 26
 
-בעקבות תלונות על הזמן שהקוד ריוויו שואב ממני, [אמיתי](https://dev.to/amitailex), חבר בצוות שלי, שלח לי קישור לטיפ 26 במאמר [״45 טיפים לקוד קלוד - מהבסיס ועד לשימוש מתקדם״](https://github.com/ykdojo/claude-code-tips?tab=readme-ov-file#tip-26-interactive-pr-reviews) של [@ykdojo](https://x.com/ykdojo):
+בעקבות תלונות על הזמן שהקוד ריוויו שואב ממני, [אמיתי](https://dev.to/amitaile), חבר בצוות שלי, שלח לי קישור לטיפ 26 במאמר [״45 טיפים לקוד קלוד - מהבסיס ועד לשימוש מתקדם״](https://github.com/ykdojo/claude-code-tips?tab=readme-ov-file#tip-26-interactive-pr-reviews) של [@ykdojo](https://x.com/ykdojo):
 
 > **טיפ 26: סקירות PR אינטראקטיביות**
 >

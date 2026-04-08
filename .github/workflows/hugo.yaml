@@ -102,6 +102,7 @@ jobs:
             "${{ runner.temp }}/lychee_public/**/*.html"
             "${{ runner.temp }}/lychee_public/**/*.xml"
           fail: true
+          jobSummary: false
           token: ${{ secrets.GITHUB_TOKEN }}
       - name: Cache save
         id: cache-save

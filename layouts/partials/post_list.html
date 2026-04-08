@@ -28,9 +28,9 @@
     {{- with .show_more_url -}}
         {{- $sectionPath := printf "/%s" (trim . "/") -}}
         {{- with site.GetPage $sectionPath -}}
-            {{- $showMoreHref = .RelPermalink -}}
+            {{- $showMoreHref = .Permalink -}}
         {{- else -}}
-            {{- $showMoreHref = . | relLangURL -}}
+            {{- $showMoreHref = strings.TrimPrefix "/" . | relLangURL -}}
         {{- end -}}
     {{- end -}}
 
